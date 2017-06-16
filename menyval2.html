@@ -1,0 +1,68 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+    
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>Min titel</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+    <!-- I header finns allt som är sidans toppdel där rubrik och menu ofta finns -->
+    <header>
+            <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+            <nav class="nav navbar-inverse navbar-static-top">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Cecilia</a>
+                    <ul class="nav navbar-nav">
+                        <!-- Byt ut # i href mot filen som ska länkas till, tex djur.html -->
+                        <li><a href="menyval1.html">Enhörningar</a></li>
+                        <li><a href="menyval2.html">Pegasus</a></li>
+                        <li><a href="menyval3.html">Scratch</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    <!-- I main finns huvudsakliga innehållet, exempelvis blogginlägg eller topplistor -->
+    <main>
+    <p>Den här sidan handlar om pegasuser. Pegasuser har ju vingar och inget horn. Här kommer min lista:</p>
+    <ul>
+    <li>Den mest kända pegasusen Pegasos föddes ur en drakes blod tillsammans med Chrysaor.</li>     
+    <li>De är väldigt skygga som enhörningar.</li>
+    <li>De kan flyga.</li>
+    <li>De lever själva uppe på en bergstop och betar på en orörd gräsplätt.</li>
+    <li>Den som lyckas tämja en pegasus får en trogen vän resten av livet.</li>
+    <li>En av de som har lyckats tämja en pegasus är Bellerofon. Han hade fått en guldbetsel av en gudinna (guldbetsel är det som hästen har i munnen när man rider). Den här historien är endast en myt och ingen vet om den är sann.</li>
+    <li>Mytologerna uppfattar denna bevingade varelse som en vattenhäst tillhörande Peseidons följe eller en himmelsk blixthäst.</li>
+    </ul>
+
+    <iframe src="https://giphy.com/embed/hRKbmfKIxbb6E" width="480" height="355" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/pegasus-hRKbmfKIxbb6E">via GIPHY</a></p>
+
+
+
+
+    </main>
+</body>
+</html>
